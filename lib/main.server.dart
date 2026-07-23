@@ -13,6 +13,7 @@ void main() {
 
   runApp(
     Document(
+      base: '/movement_to_work/',
       lang: 'en',
       title: 'Movement to Work – One Move, Many Possibilities',
       meta: {
