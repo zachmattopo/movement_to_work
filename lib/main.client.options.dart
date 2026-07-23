@@ -22,6 +22,4 @@ import 'package:jaspr/client.dart';
 ///   runApp(...);
 /// }
 /// ```
-ClientOptions get defaultClientOptions => ClientOptions(
-  clients: {},
-);
+ClientOptions get defaultClientOptions => ClientOptions();

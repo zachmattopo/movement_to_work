@@ -22,8 +22,5 @@ import 'package:jaspr/server.dart';
 ///   runApp(...);
 /// }
 /// ```
-ServerOptions get defaultServerOptions => ServerOptions(
-  clientId: 'main.client.dart.js',
-  clients: {},
-  styles: () => [],
-);
+ServerOptions get defaultServerOptions =>
+    ServerOptions(clientId: 'main.client.dart.js');
