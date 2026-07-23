@@ -3,4 +3,30 @@
 @theme {
   --font-headline: "Stack Sans Notch", sans-serif;
   --font-body: "Stack Sans Text", sans-serif;
+
+  --color-ink: oklch(0.14 0.035 260);
+  --color-ink-light: oklch(0.22 0.05 260);
+  --color-surface: oklch(0.99 0.003 260);
+  --color-cyan: oklch(0.52 0.18 230);
+  --color-cyan-light: oklch(0.62 0.18 230);
+  --color-chartreuse: oklch(0.76 0.16 120);
+  --color-chartreuse-dark: oklch(0.66 0.16 120);
+  --color-coral: oklch(0.6 0.14 30);
+  --color-coral-light: oklch(0.7 0.14 30);
+  --color-text: oklch(0.12 0.01 260);
+  --color-text-inverse: oklch(0.92 0.005 260);
+  --color-muted: oklch(0.45 0.015 260);
+}
+
+@layer base {
+  html {
+    font-optical-sizing: auto;
+  }
+  body {
+    color: var(--color-text);
+    background: var(--color-surface);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+  }
 }
