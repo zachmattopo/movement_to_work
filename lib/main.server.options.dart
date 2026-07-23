@@ -5,12 +5,6 @@
 // Generated with jaspr_builder
 
 import 'package:jaspr/server.dart';
-import 'package:movement_to_work/components/counter.dart' as _counter;
-import 'package:movement_to_work/components/header.dart' as _header;
-import 'package:movement_to_work/constants/theme.dart' as _theme;
-import 'package:movement_to_work/pages/about.dart' as _about;
-import 'package:movement_to_work/pages/home.dart' as _home;
-import 'package:movement_to_work/app.dart' as _app;
 
 /// Default [ServerOptions] for use with your Jaspr project.
 ///
@@ -30,15 +24,6 @@ import 'package:movement_to_work/app.dart' as _app;
 /// ```
 ServerOptions get defaultServerOptions => ServerOptions(
   clientId: 'main.client.dart.js',
-  clients: {
-    _about.About: ClientTarget<_about.About>('about'),
-    _home.Home: ClientTarget<_home.Home>('home'),
-  },
-  styles: () => [
-    ..._theme.styles,
-    ..._app.App.styles,
-    ..._counter.CounterState.styles,
-    ..._header.Header.styles,
-    ..._about.About.styles,
-  ],
+  clients: {},
+  styles: () => [],
 );

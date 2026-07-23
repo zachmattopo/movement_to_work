@@ -1,48 +1,55 @@
-/// The entrypoint for the **server** environment.
-///
-/// The [main] method will only be executed on the server during pre-rendering.
-/// To run code on the client, check the `main.client.dart` file.
 library;
 
 import 'package:jaspr/dom.dart';
-// Server-specific Jaspr import.
 import 'package:jaspr/server.dart';
 
-// Imports the [App] component.
-import 'app.dart';
-
-// This file is generated automatically by Jaspr, do not remove or edit.
+import 'app/app.dart';
 import 'main.server.options.dart';
 
 void main() {
-  // Initializes the server environment with the generated default options.
   Jaspr.initializeApp(
     options: defaultServerOptions,
   );
 
-  // Starts the app.
-  //
-  // [Document] renders the root document structure (<html>, <head> and <body>)
-  // with the provided parameters and components.
-  runApp(Document(
-    title: 'movement_to_work',
-    styles: [
-      // Special import rule to include to another css file.
-      css.import('https://fonts.googleapis.com/css?family=Roboto'),
-      // Each style rule takes a valid css selector and a set of styles.
-      // Styles are defined using type-safe css bindings and can be freely chained and nested.
-      css('html, body').styles(
-        width: 100.percent,
-        minHeight: 100.vh,
-        padding: .zero,
-        margin: .zero,
-        fontFamily: const .list([FontFamily('Roboto'), FontFamilies.sansSerif]),
-      ),
-      css('h1').styles(
-        margin: .unset,
-        fontSize: 4.rem,
-      ),
-    ],
-    body: App(),
-  ));
+  runApp(
+    Document(
+      lang: 'en',
+      title: 'Movement to Work – One Move, Many Possibilities',
+      meta: {
+        'description': 'One Move, Many Possibilities – a Movement to Work DWP programme campaign for 18–24 year-olds.',
+      },
+      head: [
+        link(href: 'https://fonts.googleapis.com', rel: 'preconnect'),
+        link(href: 'https://fonts.gstatic.com', rel: 'preconnect', attributes: {'crossorigin': ''}),
+        link(
+          href:
+              'https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&family=Stack+Sans+Text:wght@200..700&display=swap',
+          rel: 'stylesheet',
+        ),
+        link(href: 'styles.css', rel: 'stylesheet'),
+        meta(
+          attributes: {
+            'property': 'og:title',
+            'content': 'Movement to Work – One Move, Many Possibilities',
+          },
+        ),
+        meta(
+          attributes: {
+            'property': 'og:description',
+            'content': 'One Move, Many Possibilities – a Movement to Work DWP programme campaign for 18–24 year-olds.',
+          },
+        ),
+        meta(name: 'twitter:card', content: 'summary'),
+      ],
+      styles: [
+        css('html, body').styles(
+          width: 100.percent,
+          minHeight: 100.vh,
+          padding: .zero,
+          margin: .zero,
+        ),
+      ],
+      body: App(),
+    ),
+  );
 }

@@ -6,9 +6,6 @@
 
 import 'package:jaspr/client.dart';
 
-import 'package:movement_to_work/pages/about.dart' deferred as _about;
-import 'package:movement_to_work/pages/home.dart' deferred as _home;
-
 /// Default [ClientOptions] for use with your Jaspr project.
 ///
 /// Use this to initialize Jaspr **before** calling [runApp].
@@ -26,8 +23,5 @@ import 'package:movement_to_work/pages/home.dart' deferred as _home;
 /// }
 /// ```
 ClientOptions get defaultClientOptions => ClientOptions(
-  clients: {
-    'about': ClientLoader((p) => _about.About(), loader: _about.loadLibrary),
-    'home': ClientLoader((p) => _home.Home(), loader: _home.loadLibrary),
-  },
+  clients: {},
 );
