@@ -27,9 +27,9 @@ class WhatItIsSection extends StatelessComponent {
                   classes: 'font-body text-lg leading-relaxed sm:text-xl',
                   [
                     Component.text(
-                      'Movement to Work is a voluntary collaboration between employers and the Department for '
-                      'Work and Pensions (DWP). It is for young people aged 18 to 24 who want practical space '
-                      'to explore what work could look like for them.',
+                      'Movement to Work is a voluntary collaboration of leading employers, including the Civil Service '
+                      'through the Department for Work and Pensions (DWP), for young people aged 18 to 24 who '
+                      'want practical space to explore what work could look like for them.',
                     ),
                   ],
                 ),
@@ -46,7 +46,7 @@ class WhatItIsSection extends StatelessComponent {
                   classes: 'mt-8',
                   [
                     TextLink(
-                      href: 'https://movementtowork.org.uk/',
+                      href: 'https://movementtowork.com/',
                       label: 'Learn more on the official Movement to Work website',
                       external: true,
                       showExternalIcon: true,

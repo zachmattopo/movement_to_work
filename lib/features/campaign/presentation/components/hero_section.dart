@@ -33,7 +33,7 @@ class HeroSection extends StatelessComponent {
             div(
               classes:
                   'hero-content relative mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 py-28 sm:py-32 '
-                  'lg:grid-cols-[minmax(0,1fr)_15rem] lg:gap-20',
+                  'lg:grid-cols-[minmax(0,1fr)_30rem] lg:gap-20',
               [
                 div(
                   classes: 'hero-copy max-w-3xl',
@@ -76,15 +76,15 @@ class HeroSection extends StatelessComponent {
                 ),
                 div(
                   classes:
-                      'hero-artwork hidden aspect-[4/5] w-60 items-center justify-center rounded-xl bg-chartreuse '
+                      'hero-artwork hidden aspect-[5/4] w-[30rem] items-center justify-center rounded-xl bg-chartreuse '
                       'p-8 lg:flex',
                   [
                     img(
                       src: 'images/logo.svg',
                       alt: '',
-                      width: 210,
-                      height: 274,
-                      classes: 'h-auto w-full max-w-40',
+                      width: 440,
+                      height: 574,
+                      classes: 'h-auto w-full max-w-[24rem]',
                       attributes: {'aria-hidden': 'true'},
                     ),
                   ],

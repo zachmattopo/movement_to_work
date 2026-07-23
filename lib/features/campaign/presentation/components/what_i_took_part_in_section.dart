@@ -40,13 +40,13 @@ class WhatITookPartInSection extends StatelessComponent {
                   [
                     h3(
                       classes: 'font-headline text-2xl font-semibold tracking-tight',
-                      [Component.text('Career presentations')],
+                      [Component.text('Career presentation')],
                     ),
                     p(
                       classes: 'font-body mt-3 max-w-2xl leading-relaxed text-text/80',
                       [
                         Component.text(
-                          'They helped me connect roles to real teams and routes into work.',
+                          'They gave me inspirational insights into a real-world career journey.',
                         ),
                       ],
                     ),
@@ -63,8 +63,8 @@ class WhatITookPartInSection extends StatelessComponent {
                       classes: 'font-body mt-3 max-w-2xl leading-relaxed text-text/80',
                       [
                         Component.text(
-                          'I had time to understand what an application was asking for and describe my experience '
-                          'clearly.',
+                          'I received help to understand what an application was asking for and to frame my application '
+                          'accordingly.',
                         ),
                       ],
                     ),
