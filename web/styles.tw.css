@@ -19,6 +19,10 @@
 }
 
 @layer base {
+  :root {
+    --motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
   html {
     font-optical-sizing: auto;
   }
@@ -28,5 +32,318 @@
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-headline);
+  }
+}
+
+/* Motion is progressive: the static document remains the complete fallback. */
+@media (prefers-reduced-motion: no-preference) {
+  .primary-button,
+  .header-wordmark,
+  .header-contact-link,
+  .text-link,
+  .site-footer a {
+    transition:
+      color 180ms var(--motion-ease-out),
+      background-color 180ms var(--motion-ease-out),
+      text-decoration-thickness 180ms var(--motion-ease-out),
+      transform 180ms var(--motion-ease-out);
+  }
+
+  .primary-button:active {
+    transform: translateY(1px) scale(0.985);
+  }
+
+  .header-wordmark:active,
+  .header-contact-link:active,
+  .site-footer a:active {
+    transform: translateY(1px);
+  }
+
+  .text-link:active {
+    transform: translateX(1px);
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .primary-button:hover {
+    transform: translateY(-2px);
+  }
+
+  .header-wordmark:hover,
+  .header-contact-link:hover,
+  .site-footer a:hover {
+    transform: translateY(-1px);
+  }
+
+  .text-link:hover {
+    transform: translateX(2px);
+  }
+}
+
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .site-header {
+      isolation: isolate;
+      background-color: transparent;
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+
+    .site-header::before {
+      position: absolute;
+      z-index: 0;
+      inset: 0;
+      content: '';
+      pointer-events: none;
+      background-color: color-mix(in oklab, var(--color-ink) 92%, transparent);
+      -webkit-backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      animation: mtw-header-solidify linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 50svh 100svh;
+    }
+
+    .site-header > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-section {
+      view-timeline-name: --mtw-hero;
+      view-timeline-axis: block;
+    }
+
+    .hero-title {
+      animation: mtw-hero-title-parallax linear both;
+      animation-timeline: --mtw-hero;
+      animation-range: exit 0% exit 100%;
+    }
+
+    .hero-slogan {
+      animation: mtw-hero-slogan-parallax linear both;
+      animation-timeline: --mtw-hero;
+      animation-range: exit 0% exit 100%;
+    }
+
+    .hero-artwork {
+      animation: mtw-hero-artwork-parallax linear both;
+      animation-timeline: --mtw-hero;
+      animation-range: exit 0% exit 100%;
+    }
+
+    .hero-orb--cyan {
+      animation: mtw-hero-cyan-orb-parallax linear both;
+      animation-timeline: --mtw-hero;
+      animation-range: exit 0% exit 100%;
+    }
+
+    .hero-orb--chartreuse {
+      animation: mtw-hero-chartreuse-orb-parallax linear both;
+      animation-timeline: --mtw-hero;
+      animation-range: exit 0% exit 100%;
+    }
+
+    #what-i-took-part-in {
+      view-timeline-name: --mtw-activities;
+      view-timeline-axis: block;
+    }
+
+    .experience-timeline {
+      position: relative;
+      padding-inline-start: 2.75rem;
+    }
+
+    .experience-timeline::before,
+    .experience-timeline::after {
+      position: absolute;
+      top: 2rem;
+      bottom: 2rem;
+      left: 0.52rem;
+      width: 2px;
+      content: '';
+    }
+
+    .experience-timeline::before {
+      background-color: color-mix(in oklab, var(--color-ink) 22%, transparent);
+    }
+
+    .experience-timeline::after {
+      transform: scaleY(0);
+      transform-origin: top;
+      background-color: var(--color-cyan);
+      animation: mtw-timeline-progress linear both;
+      animation-timeline: --mtw-activities;
+      animation-range: entry 25% exit 75%;
+    }
+
+    .experience-step {
+      position: relative;
+    }
+
+    .experience-step::before {
+      position: absolute;
+      top: 2.05rem;
+      left: -2.75rem;
+      width: 1rem;
+      height: 1rem;
+      content: '';
+      border: 3px solid var(--color-surface);
+      border-radius: 50%;
+      background-color: var(--color-cyan);
+    }
+
+    #what-surprised-me {
+      view-timeline-name: --mtw-insights;
+      view-timeline-axis: block;
+    }
+
+    .insight-relationships {
+      position: relative;
+      padding-inline-start: 2.75rem;
+    }
+
+    .insight-relationships::before,
+    .insight-relationships::after {
+      position: absolute;
+      top: 2rem;
+      bottom: 2rem;
+      left: 0.52rem;
+      width: 2px;
+      content: '';
+    }
+
+    .insight-relationships::before {
+      background-color: color-mix(in oklab, var(--color-ink) 30%, transparent);
+    }
+
+    .insight-relationships::after {
+      transform: scaleY(0);
+      transform-origin: top;
+      background-color: var(--color-ink);
+      animation: mtw-relationship-progress linear both;
+      animation-timeline: --mtw-insights;
+      animation-range: entry 25% exit 75%;
+    }
+
+    .insight-node {
+      position: relative;
+    }
+
+    .insight-node::before {
+      position: absolute;
+      top: 2.05rem;
+      left: -2.75rem;
+      width: 1rem;
+      height: 1rem;
+      content: '';
+      border: 3px solid var(--color-chartreuse);
+      border-radius: 50%;
+      background-color: var(--color-ink);
+    }
+  }
+
+  @media (min-width: 64rem) and (prefers-reduced-motion: no-preference) {
+    #what-i-could-expect {
+      min-height: 500svh;
+      view-timeline-name: --mtw-expectations;
+      view-timeline-axis: block;
+    }
+
+    .expectations-journey {
+      display: grid;
+      min-height: 100svh;
+      padding-block: clamp(5rem, 10svh, 8rem);
+      position: sticky;
+      top: 0;
+      grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+      align-items: center;
+      column-gap: clamp(3rem, 7vw, 8rem);
+    }
+
+    .expectations-viewport {
+      min-width: 0;
+      margin-top: 0;
+      overflow: hidden;
+    }
+
+    .expectations-track {
+      display: flex;
+      width: 500%;
+      margin: 0;
+      border: 0;
+      animation: mtw-expectations-scrub linear both;
+      animation-timeline: --mtw-expectations;
+      animation-range: entry 100% exit 0%;
+    }
+
+    .expectation-step {
+      display: grid;
+      flex: 0 0 20%;
+      min-height: 21rem;
+      padding: clamp(2rem, 4vw, 4rem);
+      border-bottom: 0;
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      align-content: center;
+      column-gap: clamp(1.5rem, 3vw, 3rem);
+    }
+  }
+}
+
+@keyframes mtw-header-solidify {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mtw-hero-title-parallax {
+  to {
+    transform: translate3d(0, -10svh, 0);
+  }
+}
+
+@keyframes mtw-hero-slogan-parallax {
+  to {
+    transform: translate3d(0, -5svh, 0);
+  }
+}
+
+@keyframes mtw-hero-artwork-parallax {
+  to {
+    transform: translate3d(0, -15svh, 0) rotate(-3deg);
+  }
+}
+
+@keyframes mtw-hero-cyan-orb-parallax {
+  to {
+    transform: translate3d(10vw, -18svh, 0);
+  }
+}
+
+@keyframes mtw-hero-chartreuse-orb-parallax {
+  to {
+    transform: translate3d(-8vw, -10svh, 0);
+  }
+}
+
+@keyframes mtw-expectations-scrub {
+  to {
+    transform: translate3d(-80%, 0, 0);
+  }
+}
+
+@keyframes mtw-timeline-progress {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes mtw-relationship-progress {
+  to {
+    transform: scaleY(1);
   }
 }

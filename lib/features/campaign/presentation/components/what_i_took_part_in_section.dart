@@ -33,10 +33,10 @@ class WhatITookPartInSection extends StatelessComponent {
               ],
             ),
             ul(
-              classes: 'border-y border-ink/15',
+              classes: 'experience-timeline border-y border-ink/15',
               [
                 li(
-                  classes: 'border-b border-ink/15 py-7',
+                  classes: 'experience-step border-b border-ink/15 py-7',
                   [
                     h3(
                       classes: 'font-headline text-2xl font-semibold tracking-tight',
@@ -53,7 +53,7 @@ class WhatITookPartInSection extends StatelessComponent {
                   ],
                 ),
                 li(
-                  classes: 'border-b border-ink/15 py-7',
+                  classes: 'experience-step border-b border-ink/15 py-7',
                   [
                     h3(
                       classes: 'font-headline text-2xl font-semibold tracking-tight',
@@ -71,7 +71,7 @@ class WhatITookPartInSection extends StatelessComponent {
                   ],
                 ),
                 li(
-                  classes: 'border-b border-ink/15 py-7',
+                  classes: 'experience-step border-b border-ink/15 py-7',
                   [
                     h3(
                       classes: 'font-headline text-2xl font-semibold tracking-tight',
@@ -88,7 +88,7 @@ class WhatITookPartInSection extends StatelessComponent {
                   ],
                 ),
                 li(
-                  classes: 'py-7',
+                  classes: 'experience-step py-7',
                   [
                     h3(
                       classes: 'font-headline text-2xl font-semibold tracking-tight',

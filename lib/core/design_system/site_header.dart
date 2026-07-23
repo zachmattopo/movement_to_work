@@ -19,7 +19,7 @@ class SiteHeader extends StatelessComponent {
             a(
               href: '/',
               classes:
-                  'inline-flex min-h-[44px] items-center font-headline '
+                  'header-wordmark inline-flex min-h-[44px] items-center font-headline '
                   'font-semibold text-base tracking-tight sm:text-lg',
               [.text('Movement To Work')],
             ),
@@ -27,7 +27,7 @@ class SiteHeader extends StatelessComponent {
               a(
                 href: 'https://find-your-nearest-jobcentre.dwp.gov.uk/',
                 classes:
-                    'inline-flex min-h-[44px] max-w-28 items-center text-right '
+                    'header-contact-link inline-flex min-h-[44px] max-w-28 items-center text-right '
                     'font-body text-xs font-medium leading-tight transition-colors duration-200 '
                     'hover:text-chartreuse focus-visible:outline-2 '
                     'focus-visible:outline-offset-2 focus-visible:outline-chartreuse '

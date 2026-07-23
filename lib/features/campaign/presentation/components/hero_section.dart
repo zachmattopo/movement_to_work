@@ -11,40 +11,45 @@ class HeroSection extends StatelessComponent {
     return Section(
       id: 'top',
       theme: SectionTheme.ink,
-      className: 'overflow-hidden',
+      className: 'hero-section overflow-hidden',
       children: [
         div(
-          classes: 'relative isolate overflow-hidden',
+          classes: 'hero-motion-stage relative isolate overflow-hidden',
           [
             div(
-              classes: 'pointer-events-none absolute -right-24 top-16 h-72 w-72 rounded-full bg-cyan/20',
-              attributes: {'aria-hidden': 'true'},
-              [],
-            ),
-            div(
-              classes: 'pointer-events-none absolute -bottom-24 left-1/4 h-64 w-64 rounded-full bg-chartreuse/10',
+              classes:
+                  'hero-orb hero-orb--cyan pointer-events-none absolute -right-24 top-16 h-72 w-72 rounded-full '
+                  'bg-cyan/20',
               attributes: {'aria-hidden': 'true'},
               [],
             ),
             div(
               classes:
-                  'relative mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 py-28 sm:py-32 '
+                  'hero-orb hero-orb--chartreuse pointer-events-none absolute -bottom-24 left-1/4 h-64 w-64 '
+                  'rounded-full bg-chartreuse/10',
+              attributes: {'aria-hidden': 'true'},
+              [],
+            ),
+            div(
+              classes:
+                  'hero-content relative mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 py-28 sm:py-32 '
                   'lg:grid-cols-[minmax(0,1fr)_15rem] lg:gap-20',
               [
                 div(
-                  classes: 'max-w-3xl',
+                  classes: 'hero-copy max-w-3xl',
                   [
                     p(
-                      classes: 'font-body mb-5 text-sm font-semibold text-chartreuse',
+                      classes: 'hero-kicker font-body mb-5 text-sm font-semibold text-chartreuse',
                       [Component.text('For young people aged 18 to 24')],
                     ),
                     h1(
-                      classes: 'font-headline text-5xl font-bold tracking-tight text-balance sm:text-6xl lg:text-8xl',
+                      classes:
+                          'hero-title font-headline text-5xl font-bold tracking-tight text-balance sm:text-6xl lg:text-8xl',
                       [Component.text('Movement To Work')],
                     ),
                     p(
                       classes:
-                          'font-headline mt-5 text-2xl font-medium tracking-tight text-cyan-light '
+                          'hero-slogan font-headline mt-5 text-2xl font-medium tracking-tight text-cyan-light '
                           'text-balance sm:text-3xl',
                       [Component.text('One Move, Many Possibilities')],
                     ),
@@ -70,7 +75,9 @@ class HeroSection extends StatelessComponent {
                   ],
                 ),
                 div(
-                  classes: 'hidden aspect-[4/5] w-60 items-center justify-center rounded-xl bg-chartreuse p-8 lg:flex',
+                  classes:
+                      'hero-artwork hidden aspect-[4/5] w-60 items-center justify-center rounded-xl bg-chartreuse '
+                      'p-8 lg:flex',
                   [
                     img(
                       src: 'images/logo.svg',

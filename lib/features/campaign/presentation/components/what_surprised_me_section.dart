@@ -33,10 +33,10 @@ class WhatSurprisedMeSection extends StatelessComponent {
               ],
             ),
             ul(
-              classes: 'border-y border-ink/25',
+              classes: 'insight-relationships border-y border-ink/25',
               [
                 li(
-                  classes: 'border-b border-ink/25 py-7',
+                  classes: 'insight-node border-b border-ink/25 py-7',
                   [
                     h3(
                       classes: 'font-headline text-2xl font-semibold tracking-tight',
@@ -54,7 +54,7 @@ class WhatSurprisedMeSection extends StatelessComponent {
                   ],
                 ),
                 li(
-                  classes: 'border-b border-ink/25 py-7',
+                  classes: 'insight-node border-b border-ink/25 py-7',
                   [
                     h3(
                       classes: 'font-headline text-2xl font-semibold tracking-tight',
@@ -72,7 +72,7 @@ class WhatSurprisedMeSection extends StatelessComponent {
                   ],
                 ),
                 li(
-                  classes: 'py-7',
+                  classes: 'insight-node py-7',
                   [
                     h3(
                       classes: 'font-headline text-2xl font-semibold tracking-tight',
