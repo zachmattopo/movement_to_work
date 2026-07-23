@@ -35,6 +35,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: 'Setup Dart'
         uses: dart-lang/setup-dart@v1.3
+      - name: 'Setup Flutter'
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
       - name: 'Setup Node 24'
         uses: actions/setup-node@v4
         with:
