@@ -27,7 +27,7 @@ class Footer extends StatelessComponent {
               attributes: {'target': '_blank', 'rel': 'noopener noreferrer'},
               [
                 img(
-                  src: '/images/jaspr_logo.svg',
+                  src: 'images/jaspr_logo.svg',
                   alt: 'Jaspr logo',
                   classes: 'w-4 h-5 inline-block mr-1.5',
                 ),

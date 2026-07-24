@@ -81,11 +81,10 @@ class HeroSection extends StatelessComponent {
                   [
                     img(
                       src: 'images/logo.svg',
-                      alt: '',
+                      alt: 'Illustration of people working together in an office environment',
                       width: 440,
                       height: 574,
                       classes: 'h-auto w-full max-w-[24rem]',
-                      attributes: {'aria-hidden': 'true'},
                     ),
                   ],
                 ),
