@@ -1,6 +1,8 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 
+const siteBasePath = String.fromEnvironment('SITE_BASE_PATH', defaultValue: '/');
+
 class SiteHeader extends StatelessComponent {
   const SiteHeader({super.key});
 
@@ -17,7 +19,7 @@ class SiteHeader extends StatelessComponent {
               'px-4 py-2 sm:px-6 sm:py-4',
           [
             a(
-              href: '/',
+              href: siteBasePath,
               classes:
                   'header-wordmark inline-flex min-h-[44px] items-center font-headline '
                   'font-semibold text-base tracking-tight sm:text-lg',
