@@ -15,7 +15,7 @@ class Footer extends StatelessComponent {
               'flex flex-col md:flex-row items-center justify-between gap-4',
           [
             p(
-              classes: 'font-body text-sm text-text-inverse/70',
+              classes: 'font-body text-sm text-text-inverse/70 text-center md:text-left',
               [Component.text('Developed by Hafiz Nordin, Aberdeen Cohort July 2026.')],
             ),
             a(
