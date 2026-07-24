@@ -21,13 +21,13 @@ class WhatICouldExpectSection extends StatelessComponent {
               [
                 h2(
                   classes: 'font-headline text-4xl font-bold tracking-tight text-balance sm:text-5xl',
-                  [Component.text('What I Could Expect')],
+                  [Component.text('What To Expect')],
                 ),
                 p(
                   classes: 'font-body mt-6 text-lg leading-relaxed text-text-inverse/85 sm:text-xl',
                   [
                     Component.text(
-                      'I did not need to arrive with a fixed plan. I could expect practical support that helped me '
+                      'I did not arrive with a fixed plan. But I received practical support that helped me '
                       'prepare, ask questions, and try things out.',
                     ),
                   ],
@@ -46,7 +46,7 @@ class WhatICouldExpectSection extends StatelessComponent {
                           'md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-10',
                       [
                         h3(
-                          classes: 'font-headline text-2xl font-semibold tracking-tight text-chartreuse',
+                          classes: 'font-body text-2xl font-semibold tracking-tight text-chartreuse',
                           [Component.text('Career and job-search resources')],
                         ),
                         p(
@@ -66,7 +66,7 @@ class WhatICouldExpectSection extends StatelessComponent {
                           'md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-10',
                       [
                         h3(
-                          classes: 'font-headline text-2xl font-semibold tracking-tight text-chartreuse',
+                          classes: 'font-body text-2xl font-semibold tracking-tight text-chartreuse',
                           [Component.text('CV preparation')],
                         ),
                         p(
@@ -85,7 +85,7 @@ class WhatICouldExpectSection extends StatelessComponent {
                           'md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-10',
                       [
                         h3(
-                          classes: 'font-headline text-2xl font-semibold tracking-tight text-chartreuse',
+                          classes: 'font-body text-2xl font-semibold tracking-tight text-chartreuse',
                           [Component.text('Interview preparation')],
                         ),
                         p(
@@ -104,7 +104,7 @@ class WhatICouldExpectSection extends StatelessComponent {
                           'md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-10',
                       [
                         h3(
-                          classes: 'font-headline text-2xl font-semibold tracking-tight text-chartreuse',
+                          classes: 'font-body text-2xl font-semibold tracking-tight text-chartreuse',
                           [Component.text('Communication skills practice')],
                         ),
                         p(
@@ -124,7 +124,7 @@ class WhatICouldExpectSection extends StatelessComponent {
                           'md:gap-10',
                       [
                         h3(
-                          classes: 'font-headline text-2xl font-semibold tracking-tight text-chartreuse',
+                          classes: 'font-body text-2xl font-semibold tracking-tight text-chartreuse',
                           [Component.text('Work exposure')],
                         ),
                         p(

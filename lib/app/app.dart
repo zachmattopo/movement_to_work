@@ -13,7 +13,11 @@ class App extends StatelessComponent {
     return div(classes: 'main', [
       Router(
         routes: [
-          Route(path: '/', title: title, builder: (context, state) => const CampaignPage()),
+          Route(
+            path: '/',
+            title: title,
+            builder: (context, state) => const CampaignPage(),
+          ),
         ],
       ),
     ]);

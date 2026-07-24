@@ -52,7 +52,7 @@ jobs:
       - name: 'Build Jaspr'
         run: |
           dart pub global activate jaspr_cli
-          jaspr build --verbose
+          jaspr build --verbose --dart-define=SITE_BASE_PATH=/movement_to_work/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

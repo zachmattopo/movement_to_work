@@ -16,17 +16,22 @@ class Footer extends StatelessComponent {
           [
             p(
               classes: 'font-body text-sm text-text-inverse/70',
-              [Component.text('Movement To Work is a DWP employment programme.')],
+              [Component.text('Developed by Hafiz Nordin, Aberdeen Cohort July 2026.')],
             ),
             a(
-              href: 'https://find-your-nearest-jobcentre.dwp.gov.uk/',
+              href: 'https://github.com/zachmattopo/movement_to_work',
               classes:
                   'font-body text-sm font-medium transition-colors duration-200 '
                   'hover:text-chartreuse focus-visible:outline-2 '
                   'focus-visible:outline-offset-2 focus-visible:outline-chartreuse',
               attributes: {'target': '_blank', 'rel': 'noopener noreferrer'},
               [
-                Component.text('Find your local Jobcentre Plus'),
+                img(
+                  src: '/images/jaspr_logo.svg',
+                  alt: 'Jaspr logo',
+                  classes: 'w-4 h-5 inline-block mr-1.5',
+                ),
+                Component.text('Built with Jaspr'),
                 span(
                   classes: 'inline-block w-3 h-3 ml-1',
                   attributes: {'aria-hidden': 'true'},

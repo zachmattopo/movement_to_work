@@ -17,14 +17,14 @@ class ClosingCtaSection extends StatelessComponent {
           [
             h2(
               classes: 'font-headline text-4xl font-bold tracking-tight text-balance sm:text-5xl',
-              [Component.text('Talk It Through With Your Local Jobcentre Plus')],
+              [Component.text('Talk To Your Local Jobcentre Plus')],
             ),
             p(
               classes: 'font-body mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-inverse/85 sm:text-xl',
               [
                 Component.text(
-                  'You do not need to have every answer before you ask. Your local Jobcentre Plus can talk '
-                  'through whether Movement to Work could be a useful next step.',
+                  'Your local Jobcentre Plus can talk through '
+                  'whether Movement to Work could be a useful next step for you.',
                 ),
               ],
             ),

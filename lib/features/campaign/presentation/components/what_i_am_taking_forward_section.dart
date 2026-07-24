@@ -24,15 +24,14 @@ class WhatIAmTakingForwardSection extends StatelessComponent {
             div(
               [
                 p(
-                  classes: 'font-headline max-w-2xl text-2xl font-medium tracking-tight text-cyan-light sm:text-3xl',
+                  classes: 'font-body max-w-2xl text-2xl font-medium tracking-tight text-cyan-light sm:text-3xl',
                   [Component.text('I am leaving with skills, confidence, and examples I can use.')],
                 ),
                 p(
                   classes: 'font-body mt-6 max-w-3xl text-lg leading-relaxed text-text-inverse/85',
                   [
                     Component.text(
-                      'I can talk about what I have done, what I learned from it, and where I want to build from '
-                      'there.',
+                      'Now I am better equipped to get out there and explore work.',
                     ),
                   ],
                 ),
@@ -45,15 +44,14 @@ class WhatIAmTakingForwardSection extends StatelessComponent {
                           'md:gap-8',
                       [
                         h3(
-                          classes: 'font-headline text-xl font-semibold tracking-tight text-chartreuse',
+                          classes: 'font-body text-xl font-semibold tracking-tight text-chartreuse',
                           [Component.text('A clearer CV')],
                         ),
                         p(
                           classes: 'font-body leading-relaxed text-text-inverse/80',
                           [
                             Component.text(
-                              'I can describe how I prepared applications, kept track of tasks, and used feedback '
-                              'to make them clearer.',
+                              'I\'ve created a master CV that I can tailor for all my future applications.',
                             ),
                           ],
                         ),
@@ -65,15 +63,14 @@ class WhatIAmTakingForwardSection extends StatelessComponent {
                           'md:gap-8',
                       [
                         h3(
-                          classes: 'font-headline text-xl font-semibold tracking-tight text-chartreuse',
-                          [Component.text('Interview examples')],
+                          classes: 'font-body text-xl font-semibold tracking-tight text-chartreuse',
+                          [Component.text('Interview skills')],
                         ),
                         p(
                           classes: 'font-body leading-relaxed text-text-inverse/80',
                           [
                             Component.text(
-                              'I can talk about listening, communicating clearly, and responding to questions from '
-                              'mock interview practice.',
+                              'I can talk with confidence about my skills and experiences, in a way that shows I am ready for work.',
                             ),
                           ],
                         ),
@@ -85,15 +82,14 @@ class WhatIAmTakingForwardSection extends StatelessComponent {
                           'md:gap-8',
                       [
                         h3(
-                          classes: 'font-headline text-xl font-semibold tracking-tight text-chartreuse',
+                          classes: 'font-body text-xl font-semibold tracking-tight text-chartreuse',
                           [Component.text('Experience to draw on')],
                         ),
                         p(
                           classes: 'font-body leading-relaxed text-text-inverse/80',
                           [
                             Component.text(
-                              'I can explain what front-desk reception taught me about greeting people, passing on '
-                              'information, and staying focused.',
+                              'I am more aware of my skills acquired from life and education that are transferable to the work environment.',
                             ),
                           ],
                         ),
@@ -103,7 +99,7 @@ class WhatIAmTakingForwardSection extends StatelessComponent {
                       classes: 'grid gap-3 py-6 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-8',
                       [
                         h3(
-                          classes: 'font-headline text-xl font-semibold tracking-tight text-chartreuse',
+                          classes: 'font-body text-xl font-semibold tracking-tight text-chartreuse',
                           [Component.text('A practical next step')],
                         ),
                         p(

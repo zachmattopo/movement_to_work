@@ -39,8 +39,8 @@ class WhatITookPartInSection extends StatelessComponent {
                   classes: 'experience-step border-b border-ink/15 py-7',
                   [
                     h3(
-                      classes: 'font-headline text-2xl font-semibold tracking-tight',
-                      [Component.text('Career presentation')],
+                      classes: 'font-body text-2xl font-semibold tracking-tight',
+                      [Component.text('Career presentations')],
                     ),
                     p(
                       classes: 'font-body mt-3 max-w-2xl leading-relaxed text-text/80',
@@ -56,7 +56,7 @@ class WhatITookPartInSection extends StatelessComponent {
                   classes: 'experience-step border-b border-ink/15 py-7',
                   [
                     h3(
-                      classes: 'font-headline text-2xl font-semibold tracking-tight',
+                      classes: 'font-body text-2xl font-semibold tracking-tight',
                       [Component.text('Job and apprenticeship application support')],
                     ),
                     p(
@@ -74,7 +74,7 @@ class WhatITookPartInSection extends StatelessComponent {
                   classes: 'experience-step border-b border-ink/15 py-7',
                   [
                     h3(
-                      classes: 'font-headline text-2xl font-semibold tracking-tight',
+                      classes: 'font-body text-2xl font-semibold tracking-tight',
                       [Component.text('Mock interviews')],
                     ),
                     p(
@@ -91,7 +91,7 @@ class WhatITookPartInSection extends StatelessComponent {
                   classes: 'experience-step py-7',
                   [
                     h3(
-                      classes: 'font-headline text-2xl font-semibold tracking-tight',
+                      classes: 'font-body text-2xl font-semibold tracking-tight',
                       [Component.text('DWP front-desk reception experience')],
                     ),
                     p(

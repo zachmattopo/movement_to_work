@@ -6,6 +6,8 @@ import 'package:jaspr/server.dart';
 import 'app/app.dart';
 import 'main.server.options.dart';
 
+const siteBasePath = String.fromEnvironment('SITE_BASE_PATH', defaultValue: '/');
+
 void main() {
   Jaspr.initializeApp(
     options: defaultServerOptions,
@@ -13,11 +15,11 @@ void main() {
 
   runApp(
     Document(
-      base: '/movement_to_work/',
+      base: siteBasePath,
       lang: 'en',
       title: 'Movement to Work – One Move, Many Possibilities',
       meta: {
-        'description': 'One Move, Many Possibilities – a Movement to Work DWP programme campaign for 18–24 year-olds.',
+        'description': 'One Move, Many Possibilities – a Movement to Work DWP programme campaign for 16–30 year-olds.',
       },
       head: [
         link(href: 'https://fonts.googleapis.com', rel: 'preconnect'),
@@ -37,7 +39,7 @@ void main() {
         meta(
           attributes: {
             'property': 'og:description',
-            'content': 'One Move, Many Possibilities – a Movement to Work DWP programme campaign for 18–24 year-olds.',
+            'content': 'One Move, Many Possibilities – a Movement to Work DWP programme campaign for 16–30 year-olds.',
           },
         ),
         meta(name: 'twitter:card', content: 'summary'),

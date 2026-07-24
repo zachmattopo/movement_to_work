@@ -39,15 +39,15 @@ class WhatSurprisedMeSection extends StatelessComponent {
                   classes: 'insight-node border-b border-ink/25 py-7',
                   [
                     h3(
-                      classes: 'font-headline text-2xl font-semibold tracking-tight',
+                      classes: 'font-body text-2xl font-semibold tracking-tight',
                       [Component.text('The sort of workplace I prefer')],
                     ),
                     p(
                       classes: 'font-body mt-3 max-w-2xl leading-relaxed',
                       [
                         Component.text(
-                          'I noticed I value a place where I can ask questions, understand the routine, and work '
-                          'with people who communicate clearly.',
+                          'I noticed I value a quiet but varied work environment '
+                          'where I can be practical and hands-on.',
                         ),
                       ],
                     ),
@@ -57,14 +57,14 @@ class WhatSurprisedMeSection extends StatelessComponent {
                   classes: 'insight-node border-b border-ink/25 py-7',
                   [
                     h3(
-                      classes: 'font-headline text-2xl font-semibold tracking-tight',
+                      classes: 'font-body text-2xl font-semibold tracking-tight',
                       [Component.text('What gives work meaning for me')],
                     ),
                     p(
                       classes: 'font-body mt-3 max-w-2xl leading-relaxed',
                       [
                         Component.text(
-                          'I could name what motivates me: being useful, learning something new, and seeing how '
+                          'I could name what motivates me: good pay, progression prospects, and seeing how '
                           'my contribution helps other people.',
                         ),
                       ],
@@ -75,15 +75,15 @@ class WhatSurprisedMeSection extends StatelessComponent {
                   classes: 'insight-node py-7',
                   [
                     h3(
-                      classes: 'font-headline text-2xl font-semibold tracking-tight',
+                      classes: 'font-body text-2xl font-semibold tracking-tight',
                       [Component.text('Skills I had already built')],
                     ),
                     p(
                       classes: 'font-body mt-3 max-w-2xl leading-relaxed',
                       [
                         Component.text(
-                          'Things from life, education, and past work counted: organising my time, listening, '
-                          'keeping calm, and helping others.',
+                          'Things from life, education, and past work counted: organising that family trip, '
+                          'working on school projects, etc.',
                         ),
                       ],
                     ),

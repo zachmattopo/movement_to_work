@@ -1,6 +1,6 @@
 # movement_to_work
 
-A new Jaspr project
+A Jaspr project to promote MTW to a young audience.
 
 ## Running the project
 

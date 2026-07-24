@@ -28,7 +28,7 @@ class WhatItIsSection extends StatelessComponent {
                   [
                     Component.text(
                       'Movement to Work is a voluntary collaboration of leading employers, including the Civil Service '
-                      'through the Department for Work and Pensions (DWP), for young people aged 18 to 24 who '
+                      'through the Department for Work and Pensions (DWP), for young people aged 16 to 30 who '
                       'want practical space to explore what work could look like for them.',
                     ),
                   ],

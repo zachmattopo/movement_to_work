@@ -40,7 +40,7 @@ class HeroSection extends StatelessComponent {
                   [
                     p(
                       classes: 'hero-kicker font-body mb-5 text-sm font-semibold text-chartreuse',
-                      [Component.text('For young people aged 18 to 24')],
+                      [Component.text('For young people aged 16 to 30')],
                     ),
                     h1(
                       classes:
